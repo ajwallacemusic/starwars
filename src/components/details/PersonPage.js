@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../../App.css'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import Typography from '@material-ui/core/Typography'
-import Paper from '@material-ui/core/Paper'
+// import Paper from '@material-ui/core/Paper'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
-import TableHead from '@material-ui/core/TableHead'
+// import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import CardMedia from '@material-ui/core/CardMedia';
-import { withStyles } from "@material-ui/core/styles/index";
-import PropTypes from "prop-types";
+// import { withStyles } from "@material-ui/core/styles/index";
+// import PropTypes from "prop-types";
 
 
 const planetDefaultImage = require('../../static/images/planets/empty-planet.jpg')

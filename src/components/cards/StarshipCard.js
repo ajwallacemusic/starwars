@@ -23,7 +23,7 @@ const styles = {
 function StarshipCard(props) {
     const { classes } = props;
     const name = props.ship.name;
-    const imageName = name.replace(/\s+/g, '-').toLowerCase();
+    // const imageName = name.replace(/\s+/g, '-').toLowerCase();
     let theImage
     try {
         // (require('../../static/images/starships/' + imageName + '.jpg'))

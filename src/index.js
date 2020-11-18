@@ -8,7 +8,7 @@ import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/";
-import Paper from '@material-ui/core/Paper'
+// import Paper from '@material-ui/core/Paper'
 
 const client = new ApolloClient({
     uri: 'https://api-euwest.graphcms.com/v1/ck5wca13qc9ux01fgaidt12m4/master'

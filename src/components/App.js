@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../App.css'
 import PeoplePage from './PeoplePage';
 import PlanetPage from './PlanetPage'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import AppBar from '@material-ui/core/AppBar'
 import FilmsPage from './FilmsPage'

@@ -78,9 +78,9 @@ class PersonPage extends React.Component {
 
         var personParam = this.props.match.params.name
         var searchTerm
-        if (personParam == 'r2-d2' || personParam == 'c-3po' || personParam == 'r5-d4') {
+        if (personParam === 'r2-d2' || personParam === 'c-3po' || personParam === 'r5-d4') {
             searchTerm = personParam
-        } else if (personParam == 'obi-wan-kenobi') {
+        } else if (personParam === 'obi-wan-kenobi') {
             searchTerm = 'obi-wan kenobi'
         } else {
             searchTerm = personParam.replace(/-/g, " ")
@@ -150,7 +150,7 @@ class PersonPage extends React.Component {
                                     <Typography variant="display1" align="center">Homeworld</Typography>
                                     <Typography variant="headline" align="center">{character.homeworld.name}</Typography>
                                     <div
-                                         style={this.state.hover == true ? hoverClass.hover : divStyle}
+                                         style={this.state.hover === true ? hoverClass.hover : divStyle}
                                          onMouseOver={this.handleMouseOver}
                                          onMouseOut={this.handleMouseOut}>
                                         <CardMedia

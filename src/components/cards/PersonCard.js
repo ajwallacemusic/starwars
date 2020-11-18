@@ -69,7 +69,7 @@ class PersonCard1 extends React.Component {
         return (
             <div>
                 <div>
-                    <Card className={this.state.hover == true ? classes.hover : classes.card}
+                    <Card className={this.state.hover === true ? classes.hover : classes.card}
                           onMouseOver={this.handleMouseOver}
                           onMouseOut={this.handleMouseOut}>
                         <a style={linkStyle} href={nameLink}>

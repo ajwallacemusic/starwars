@@ -26,8 +26,9 @@ function StarshipCard(props) {
     const imageName = name.replace(/\s+/g, '-').toLowerCase();
     let theImage
     try {
-        (require('../../static/images/starships/' + imageName + '.jpg'))
-        theImage = require('../../static/images/starships/' + imageName + '.jpg')
+        // (require('../../static/images/starships/' + imageName + '.jpg'))
+        // theImage = require('../../static/images/starships/' + imageName + '.jpg')
+        require('../../static/images/people/empty-avatar.jpg')
     } catch(e){
         theImage = require('../../static/images/people/empty-avatar.jpg')
     }

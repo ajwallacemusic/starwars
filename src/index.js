@@ -11,7 +11,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/";
 import Paper from '@material-ui/core/Paper'
 
 const client = new ApolloClient({
-    uri: 'https://api.graphcms.com/simple/v1/swapi'
+    uri: 'https://api-euwest.graphcms.com/v1/ck5wca13qc9ux01fgaidt12m4/master'
 })
 
 const theme = createMuiTheme({

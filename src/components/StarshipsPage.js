@@ -10,7 +10,7 @@ const AllStarships = () => (
     <Query
         query={gql`
         query GetAllStarships {
-  allStarships(first: 20) {
+  starships(first: 20) {
     name
   }
 }
@@ -23,7 +23,7 @@ const AllStarships = () => (
 
             //return data.allPersons.map((person, index) => {
             return <Grid container justify='center' spacing={32}>
-                {data.allStarships.map((ship, index) => (
+                {data.starships.map((ship, index) => (
                         <Grid key={index} item style={{margin: 20, display: 'block', height: 300, width: 300}}>
                             <StarshipCard ship={ship}/>
                         </Grid>

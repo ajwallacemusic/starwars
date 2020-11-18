@@ -23,7 +23,7 @@ class PeoplePage extends Component {
                 <Query
                     query={gql`
         query GetAllPersons {
-  allPersons(first: 20) {
+  persons(first: 20) {
     name
     homeworld {
       name
@@ -39,7 +39,7 @@ class PeoplePage extends Component {
 
                         //return data.allPersons.map((person, index) => {
                         return <Grid container justify='center' spacing={32}>
-                            {data.allPersons.map((person, index) => (
+                            {data.persons.map((person, index) => (
                                     <Grid key={index} item style={{margin: 20, display: 'block', height: 300, width: 300}}>
                                         <PersonCard1 person={person} homeworld={person.homeworld ? person.homeworld.name : 'homeworld unknown'}
                                                      />

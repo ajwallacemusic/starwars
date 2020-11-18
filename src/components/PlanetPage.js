@@ -10,7 +10,7 @@ const AllPlanets = () => (
     <Query
         query={gql`
         query GetAllPlanets {
-  allPlanets(first: 20) {
+  planets(first: 20) {
     name
   }
 }
@@ -21,7 +21,7 @@ const AllPlanets = () => (
             if (error) return <p>Error :(</p>
 
             return <Grid container justify='center' spacing={32}>
-                {data.allPlanets.map((planet, index) => (
+                {data.planets.map((planet, index) => (
                         <Grid key={index} item style={{margin: 20, display: 'block', height: 300, width: 300}}>
                             <PlanetCard planet={planet} />
                         </Grid>

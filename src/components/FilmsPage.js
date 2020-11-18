@@ -11,7 +11,7 @@ const AllFilms = () => (
     <Query
         query={gql`
         query GetAllFilms {
-  allFilms(first: 20) {
+  films(first: 20) {
     title
   }
 }
@@ -23,7 +23,7 @@ const AllFilms = () => (
             if (error) return <p>Error :(</p>
 
             return <Grid container justify='center' spacing={32}>
-                {data.allFilms.map((film, index) => (
+                {data.films.map((film, index) => (
                         <Grid key={index} item style={{margin: 20, display: 'block', height: 300, width: 300}}>
                             <FilmCard film={film} />
                         </Grid>

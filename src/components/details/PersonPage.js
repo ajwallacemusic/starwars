@@ -89,7 +89,7 @@ class PersonPage extends React.Component {
 
         const GET_ONE_PERSON = gql`
             query GetOnePerson($searchTerm: String!) {
-                Person(name: $searchTerm) {
+                person(where: {name: $searchTerm}) {
                     id
                     name
                     species {
@@ -129,7 +129,7 @@ class PersonPage extends React.Component {
                         if (error) return <p>Error :(</p>
 
                         //return data.allPersons.map((person, index) => {
-                        const character = data.Person
+                        const character = data.person
                         return <div>
                             <Typography variant="display3" align="center">{character.name}</Typography>
                             <Table>
